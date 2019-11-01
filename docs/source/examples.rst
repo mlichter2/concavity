@@ -99,7 +99,6 @@ Output all the concave/convex vertices on the polygon boundary
     concavity.plot_vertices(ch, concave_df, convex_df)
 
 
-
 .. image:: /../figs/all_poly_not_smoothed.png
    :align: center
    :alt:

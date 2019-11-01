@@ -66,10 +66,9 @@ concavity.plot_concave_hull(coords, ch)
 
 The ```find_concave_vertices``` and ```find_concave_vertices``` functions take a polygon, an angle_threshold as the minimum angle above which a vertex is in a concave/convex location and a filter type that determines if the function outputs all point above the angle threshold or will attempt to locate the peak concave/convex vertices. the output type can be either ageopandas GeoDataFrame or a list of vertices and the angle of the two edges they connect
 
-Here we choose to output all the concave/convex:¶
+Here we choose to output all the concave/convex:
 
 ```python
-from shapely.geometry import Point
 concave_df = concavity.find_concave_vertices(ch,0, filter_type ='all')
 convex_df = concavity.find_convex_vertices(ch,0, filter_type ='all')
 concavity.plot_vertices(ch, concave_df, convex_df)
