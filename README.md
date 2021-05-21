@@ -64,7 +64,7 @@ concavity.plot_concave_hull(coords, ch)
 
 * Find concave and convex vertices on a polygon boundary
 
-The ```find_concave_vertices``` and ```find_concave_vertices``` functions take a polygon, an angle_threshold as the minimum angle above which a vertex is in a concave/convex location and a filter type that determines if the function outputs all point above the angle threshold or will attempt to locate the peak concave/convex vertices. the output type can be either ageopandas GeoDataFrame or a list of vertices and the angle of the two edges they connect
+The ```find_concave_vertices``` and ```find_concave_vertices``` functions take a polygon, an angle_threshold as the minimum angle above which a vertex is in a concave/convex location and a filter type that determines if the function outputs all point above the angle threshold or will attempt to locate the peak concave/convex vertices. the output type can be either a geopandas GeoDataFrame or a list of vertices and the angle of the two edges they connect.
 
 Here we choose to output all the concave/convex:
 
